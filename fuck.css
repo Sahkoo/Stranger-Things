@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img {
+    max-width: 90%;
+    max-height: 90%;
+    opacity: 0;
+    /* спочатку невидима */
+    animation: fadeIn 2.5s ease-in forwards;
+    /* анімація проявлення */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+        /* повна темрява */
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+        /* нормальна яскравість */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        padding: 14px;
+    }
+}
